@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSV Converter</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="csv-converter.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>CSV Converter</h1>
+
+    <div id="uploadZone" class="upload-zone" tabindex="0">
+      <p>📁 Click or drag & drop files here to upload</p>
+    </div>
+    <input type="file" id="fileInput" multiple style="display: none" />
+
+    <ul id="fileList" class="file-list"></ul>
+
+    <div class="buttons">
+      <button id="convertBtn">🔄 Convert</button>
+      <button id="clearBtn">🧹 Clear</button>
+      <button id="downloadAllBtn">⬇️ Download All</button>
+    </div>
+
+    <div id="statusMessages" class="status"></div>
+  </div>
+</body>
+</html>
+

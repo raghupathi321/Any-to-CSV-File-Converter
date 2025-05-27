@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Advanced File to CSV Converter",
+  "version": "2.1",
+  "description": "Convert JSON, Excel, XML, YAML, TSV files to CSV with advanced options and beautiful UI.",
+  "permissions": [
+    "downloads",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "CSV Converter"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["libs/*", "*.js", "*.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
